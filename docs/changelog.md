@@ -1,17 +1,14 @@
-05-08-2022
-
-*Agregado*
+## 05-08-2022
+### Agregado
 * ideas.md
 
-13-08-2022
-
-Agregado
+## 13-08-2022
+### Agregado
 * Proyecto inicial creado con Android Studio
 
-Corregido
+### Corregido
 * ideas.md
 
-16-08-2022
-
-Agregado
+### 16-08-2022
+## Agregado
 * Mockup
