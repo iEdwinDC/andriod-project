@@ -1,6 +1,6 @@
-#### Ideas de proyecto
+# Ideas de proyecto
 
-### Idea 1: Achoun
+## Idea 1: Achoun
 
 Achoun es una aplicación que nos permite llevar la contabilidad de una empresa la cual cuenta con los siguientes beneficios:
 
