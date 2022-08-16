@@ -1,6 +1,6 @@
 05-08-2022
 
-Agregado
+*Agregado*
 * ideas.md
 
 13-08-2022
