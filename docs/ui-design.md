@@ -19,3 +19,9 @@
    Al ser empleado veras solo la opción de agregar inventario
    
    ![3 pantalla empleado](https://user-images.githubusercontent.com/104042510/185064004-04710ca6-28ab-4da4-aa22-1104680ca672.png)
+   
+### 5. Crear inventario
+   En esta parte podremos crear inventarios utilizando cada apartado y el sistema hará la respectivas cuentas internamente, además contará con un botón para agregar        observaciones si es necesario
+   
+   ![4 1 pantalla](https://user-images.githubusercontent.com/104042510/185065444-f4254361-2ced-4a3c-81c7-906828dd2867.png)
+   ![4 2  pantalla](https://user-images.githubusercontent.com/104042510/185065455-ecca90a2-53ad-4108-b0e8-da472f488eec.png)
