@@ -1,4 +1,4 @@
-## v0.0.1 05-08-2022
+## 05-08-2022 v0.0.1
 ### Agregado
 * ideas.md
 
@@ -9,6 +9,6 @@
 ### Corregido
 * ideas.md
 
-## v0.0.2 16-08-2022
+## 16-08-2022 v0.0.2
 ### Agregado
 * Primera versión Mockup
