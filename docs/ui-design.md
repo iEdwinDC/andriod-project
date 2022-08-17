@@ -13,9 +13,9 @@
 ### 3. Vista de Administrador
    Al ser administrador nos salta dos opciones en donde nos dejará ver los inventarios creados y las estadisticas de los diferentes meses
    
-  ![3 pantalla admin](https://user-images.githubusercontent.com/104042510/185063873-71f5fc08-2ddc-40f5-90cf-34a89aca28fe.png)
+ ![3 pantalla admin](https://user-images.githubusercontent.com/104042510/185063873-71f5fc08-2ddc-40f5-90cf-34a89aca28fe.png)
 
 ### 4. Vista de Empleado
    Al ser empleado veras solo la opción de agregar inventario
    
-  ![3 pantalla empleado](https://user-images.githubusercontent.com/104042510/185064004-04710ca6-28ab-4da4-aa22-1104680ca672.png)
+ ![3 pantalla empleado](https://user-images.githubusercontent.com/104042510/185064004-04710ca6-28ab-4da4-aa22-1104680ca672.png)
