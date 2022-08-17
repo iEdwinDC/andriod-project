@@ -11,4 +11,4 @@
 
 ## 16-08-2022 v0.0.2
 ### Agregado
-* Primera versión Mockup
+* Mockup
