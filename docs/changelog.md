@@ -9,6 +9,6 @@
 ### Corregido
 * ideas.md
 
-## 16-08-2022 v0.0.2
+## 17-08-2022 v0.0.2
 ### Agregado
 * Mockup
