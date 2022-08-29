@@ -21,7 +21,7 @@
    ![3 pantalla empleado](https://user-images.githubusercontent.com/104042510/185064004-04710ca6-28ab-4da4-aa22-1104680ca672.png)
    
 ### 5. Crear inventario
-   En esta parte podremos crear inventarios utilizando cada apartado y el sistema hará la respectivas cuentas internamente, además contará con un botón para agregar        observaciones si es necesario
+   En esta parte podremos crear inventarios utilizando el modelo ya establecido por la empresa, en donde cada # será un valor numerico.
    
    ![4 1 empleadov2](https://user-images.githubusercontent.com/104042510/187289341-e8af94f6-8168-4ca6-8a79-0c65cf8e0cac.png)
    ![4 2 pantalla v2](https://user-images.githubusercontent.com/104042510/187289359-675cbef6-4556-41fb-b58b-6950c92d035a.png)
