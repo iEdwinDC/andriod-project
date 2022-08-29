@@ -10,4 +10,5 @@
 Achoun le permitirá al usuario registrar y consultar invenvarios de la empresa Cholaos El Original a través de una interfaz amigable. El usuario podrá:
 1. Iniciar sesión.
 2. Crear invetarios: Desde la pantalla inicial tendrá la opción de crear un inventario.
-3. Ver estadisticas (Administrador) donde podrá observar los diferentes meses de inventarios, editarlos y compararlos.
+3. El usuario al momento de crear invetarios tendrá la opción de hacer una observación si así es necesario.
+4. Ver estadisticas (Administrador) donde podrá observar los diferentes meses de inventarios, editarlos y compararlos.
