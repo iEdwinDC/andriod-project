@@ -14,13 +14,18 @@
    Al ser administrador nos salta dos opciones en donde nos dejará ver los inventarios creados y las estadisticas de los diferentes meses
    
    ![3 pantalla admin](https://user-images.githubusercontent.com/104042510/185063873-71f5fc08-2ddc-40f5-90cf-34a89aca28fe.png)
+   
+### 4. Lista de inventario
+   Al ser administrador tendremos acceso a ver todos los inventarios creados.
+   
+   ![5 pantalla](https://user-images.githubusercontent.com/104042510/187301370-68128bef-9d1b-49f5-a09d-77bf09a10ebf.png)
 
-### 4. Vista de Empleado
+### 5. Vista de Empleado
    Al ser empleado veras solo la opción de agregar inventario
    
    ![3 pantalla empleado](https://user-images.githubusercontent.com/104042510/185064004-04710ca6-28ab-4da4-aa22-1104680ca672.png)
    
-### 5. Crear inventario
+### 6. Crear inventario
    En esta parte podremos crear inventarios utilizando el modelo ya establecido por la empresa, en donde cada # será un valor numerico.
    
    ![4 1 empleadov2](https://user-images.githubusercontent.com/104042510/187289341-e8af94f6-8168-4ca6-8a79-0c65cf8e0cac.png)
