@@ -2,8 +2,8 @@
 
 ### Restricciones técnicas
 1. Esta aplicación funcionará en dispositivos Android con sistema operativo versión 8 o superior.
-2. La aplicación no permitirá crear usuarios.
-3. Se manejará formatos dados por la empresa (como el inventario).
+2. La aplicación no permitirá crear usuarios, estos ya vendrán por defecto.
+3. Los formatos de invetanrios serán dados por la empresa.
 4. La información será almacenada en Firebase mediante una API.
 
 ### Funcionalidades de usuario
