@@ -9,3 +9,10 @@
 ## 17-08-2022 v0.0.2
 ### Agregado
 * Mockup
+
+## 29-08-2022 v0.0.3
+### Agregado
+* Features.md
+
+### Actualizado
+* Mockup
