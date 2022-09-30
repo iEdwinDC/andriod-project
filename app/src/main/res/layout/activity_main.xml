@@ -14,7 +14,7 @@
         android:layout_height="65dp"
         android:layout_marginBottom="90dp"
         android:backgroundTint="@color/white"
-        android:text="Sign in"
+        android:text="@string/sign_in"
         android:textColor="@color/black"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
