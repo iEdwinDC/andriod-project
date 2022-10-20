@@ -24,28 +24,30 @@ class LogginActivity : AppCompatActivity() {
         val btn: Button = findViewById(R.id.button_submit)
 
         btn.setOnClickListener {
-            if(email.text.isNotEmpty() && password.text.isNotEmpty()){
+            if (email.text.isNotEmpty() && password.text.isNotEmpty()) {
                 FirebaseAuth.getInstance()
-                    .signInWithEmailAndPassword(email.text.toString(), password.text.toString()).addOnCompleteListener{
-                        if(it.isSuccessful){
-                            showMenu(it.result?.user?.email?:"", ProviderType.BASIC)
-                        }else{
+                    .signInWithEmailAndPassword(email.text.toString(), password.text.toString())
+                    .addOnCompleteListener {
+                        if (it.isSuccessful) {
+                            showMenu(it.result?.user?.email ?: "", ProviderType.BASIC)
+                        } else {
                             showAlert()
                         }
                     }
             }
         }
     }
-    private fun showAlert(){
+
+    private fun showAlert() {
         val builder = AlertDialog.Builder(this)
         builder.setTitle("Error")
         builder.setMessage("correo electrónico o contraseña incorrecta")
-        builder.setPositiveButton("Aceptar",null)
+        builder.setPositiveButton("Aceptar", null)
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }
 
-    private fun showMenu(email: String, provider: ProviderType){
+    private fun showMenu(email: String, provider: ProviderType) {
 
         val menuIntent = Intent(this, MenuActivity::class.java).apply {
             putExtra("email", email)

@@ -14,4 +14,16 @@
     <string name="inventario_abril">Inventario Abril</string>
     <string name="volver_al_menu">Volver al menu</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="entrada">Entrada</string>
+    <string name="stock">Stock</string>
+    <string name="vasos">Vasos</string>
+    <string name="inv_f">Inv f</string>
+    <string name="cholao">Cholao</string>
+    <string name="maxicholao">MaxiCholao</string>
+    <string name="lulada">Lulada</string>
+    <string name="guanabada">Guanabada</string>
+    <string name="raspao">Raspao</string>
+    <string name="todo">TODO</string>
+    <string name="logo">logo</string>
+    <string name="guanabanada">Guanabanada</string>
 </resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "672092853030",
+    "project_id": "cholaos-ef169",
+    "storage_bucket": "cholaos-ef169.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672092853030:android:1bf69a95f5dfdcc56427e7",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672092853030-cd951vku0kv0ordt4vsi6iautnlbctc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvqyqgTj-fDRd__ZHdXeNNne7k8vHQmhQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672092853030-cd951vku0kv0ordt4vsi6iautnlbctc0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

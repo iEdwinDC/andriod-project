@@ -5,9 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-enum class ProviderType{
-        BASIC
+enum class ProviderType {
+    BASIC
 }
+
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,7 +16,7 @@ class MenuActivity : AppCompatActivity() {
 
         val buttonInventory: Button = findViewById(R.id.button_inventory)
         buttonInventory.setOnClickListener {
-            val intent: Intent = Intent(this, MenuActivity::class.java)
+            val intent: Intent = Intent(this, CreateInventoryActivity::class.java)
             startActivity(intent)
         }
 
