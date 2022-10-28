@@ -32,16 +32,16 @@
             android:value="YOUR_API_KEY" />
 
         <activity
-            android:name=".InventoriesActivity"
+            android:name=".ShowInventoryActivity"
             android:exported="false" />
         <activity
-            android:name=".InventoryListActivity"
+            android:name=".SelectInventoryActivity"
             android:exported="false" />
         <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
-            android:name=".LogginActivity"
+            android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

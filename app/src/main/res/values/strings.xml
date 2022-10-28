@@ -26,4 +26,23 @@
     <string name="todo">TODO</string>
     <string name="logo">logo</string>
     <string name="guanabanada">Guanabanada</string>
+    <string name="guardar">Guardar</string>
+    <string name="total">Total</string>
+    <string name="fecha">Fecha</string>
+    <string name="inventario_mayo">inventario mayo</string>
+    <string name="inventario_junio">inventario junio</string>
+    <string name="inventario_julio">inventario julio</string>
+    <string name="inventario_agosto">inventario agosto</string>
+    <string name="inventario_septiembre">inventario septiembre</string>
+    <string name="inventario_octubre">inventario octubre</string>
+    <string name="inventario_noviembre">inventario noviembre</string>
+    <string name="inventario_diciembre">inventario diciembre</string>
+    <string name="seleccione_la_fecha">Seleccione la fecha</string>
+    <string name="continuar">Continuar</string>
+    <string name="gp_soacha">GP Soacha</string>
+    <string name="mercurio">Mercurio</string>
+    <string name="altavista">Altavista</string>
+    <string name="ensue_o">Ensueño</string>
+    <string name="ensueno">ensueno</string>
+    <string name="tunal">Tunal</string>
 </resources>

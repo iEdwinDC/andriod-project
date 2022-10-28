@@ -12,18 +12,20 @@ enum class ProviderType {
 class MenuActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inventories)
+        setContentView(R.layout.activity_menu)
 
         val buttonInventory: Button = findViewById(R.id.button_inventory)
         buttonInventory.setOnClickListener {
-            val intent: Intent = Intent(this, CreateInventoryActivity::class.java)
+            val intent = Intent(this, CreateInventoryActivity::class.java)
             startActivity(intent)
         }
 
         val buttonStatic: Button = findViewById(R.id.button_statistics)
         buttonStatic.setOnClickListener {
-            val intent: Intent = Intent(this, InventoryListActivity::class.java)
+            val intent = Intent(this, SelectInventoryActivity::class.java)
             startActivity(intent)
         }
+
+
     }
 }

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/empty"
-    tools:context=".CreateInventoryActivity">
-
+    tools:context=".ShowInventoryActivity">
 
     <ImageView
         android:id="@+id/logo"
@@ -18,6 +17,29 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fecha"
+        android:layout_margin="20dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#ee134d"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/text_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/date"
+        app:layout_constraintTop_toTopOf="@+id/date"
+        app:layout_constraintEnd_toStartOf="@+id/logo"/>
 
     <TextView
 
@@ -140,27 +162,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_guanabada" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextStockCholao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
+
         app:layout_constraintBottom_toBottomOf="@id/text_cholao"
         app:layout_constraintEnd_toStartOf="@id/editTextEntradaCholao"
         app:layout_constraintStart_toEndOf="@id/text_cholao"
         app:layout_constraintTop_toTopOf="@id/text_cholao" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextEntradaCholao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_cholao"
@@ -168,13 +189,12 @@
         app:layout_constraintStart_toEndOf="@id/editTextStockCholao"
         app:layout_constraintTop_toTopOf="@id/text_cholao" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextInvFCholao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_cholao"
@@ -182,12 +202,11 @@
         app:layout_constraintStart_toEndOf="@id/editTextEntradaCholao"
         app:layout_constraintTop_toTopOf="@id/text_cholao" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextStockMaxiCholao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_maxicholao"
@@ -195,13 +214,12 @@
         app:layout_constraintStart_toEndOf="@id/text_maxicholao"
         app:layout_constraintTop_toTopOf="@id/text_maxicholao" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextEntradaMaxiCholao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_maxicholao"
@@ -209,13 +227,12 @@
         app:layout_constraintStart_toEndOf="@id/editTextStockMaxiCholao"
         app:layout_constraintTop_toTopOf="@id/text_maxicholao" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextInvFMaxiCholao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_maxicholao"
@@ -224,13 +241,12 @@
         app:layout_constraintTop_toTopOf="@id/text_maxicholao" />
 
 
-    <EditText
+    <TextView
         android:id="@+id/editTextStockLulada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_lulada"
@@ -238,13 +254,12 @@
         app:layout_constraintStart_toEndOf="@id/text_lulada"
         app:layout_constraintTop_toTopOf="@id/text_lulada" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextEntradaLulada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_lulada"
@@ -252,13 +267,12 @@
         app:layout_constraintStart_toEndOf="@id/editTextStockLulada"
         app:layout_constraintTop_toTopOf="@id/text_lulada" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextInvFLulada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_lulada"
@@ -267,40 +281,41 @@
         app:layout_constraintTop_toTopOf="@id/text_lulada" />
 
 
-    <EditText
+    <TextView
         android:id="@+id/editTextStockGuanabanada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_guanabada"
         app:layout_constraintEnd_toStartOf="@id/editTextEntradaGuanabanada"
         app:layout_constraintStart_toEndOf="@id/text_guanabada"
-        app:layout_constraintTop_toTopOf="@id/text_guanabada" />
+        app:layout_constraintTop_toTopOf="@id/text_guanabada"
 
-    <EditText
+        />
+
+    <TextView
         android:id="@+id/editTextEntradaGuanabanada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_guanabada"
         app:layout_constraintEnd_toStartOf="@id/editTextInvFGuanabanada"
         app:layout_constraintStart_toEndOf="@id/editTextStockGuanabanada"
-        app:layout_constraintTop_toTopOf="@id/text_guanabada" />
+        app:layout_constraintTop_toTopOf="@id/text_guanabada"
 
-    <EditText
+        />
+
+    <TextView
         android:id="@+id/editTextInvFGuanabanada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_guanabada"
@@ -309,13 +324,12 @@
         app:layout_constraintTop_toTopOf="@id/text_guanabada" />
 
 
-    <EditText
+    <TextView
         android:id="@+id/editTextStockRaspao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="45dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_raspao"
@@ -323,13 +337,12 @@
         app:layout_constraintStart_toEndOf="@id/text_raspao"
         app:layout_constraintTop_toTopOf="@id/text_raspao" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextEntradaRaspao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_raspao"
@@ -337,13 +350,12 @@
         app:layout_constraintStart_toEndOf="@id/editTextStockRaspao"
         app:layout_constraintTop_toTopOf="@id/text_raspao" />
 
-    <EditText
+    <TextView
         android:id="@+id/editTextInvFRaspao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:ems="2"
-        android:inputType="number"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/text_raspao"
@@ -352,20 +364,5 @@
         app:layout_constraintTop_toTopOf="@id/text_raspao" />
 
 
-    <Button
-        android:id="@+id/ButtonSaveInventory"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="25dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/guardar"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
