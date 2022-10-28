@@ -1,14 +1,6 @@
-## 05-08-2022 v0.0.1
+## 29-09-2022 
 ### Agregado
-* ideas.md
-
-## 13-08-2022
-### Corregido
-* ideas.md
-
-## 17-08-2022 v0.0.2
-### Agregado
-* Mockup
+* Aplicación con UI
 
 ## 29-08-2022 v0.0.3
 ### Agregado
@@ -16,3 +8,22 @@
 
 ### Actualizado
 * Mockup
+
+## 17-08-2022 v0.0.2
+### Agregado
+* Mockup
+
+## 13-08-2022
+### Corregido
+* ideas.md
+
+## 05-08-2022 v0.0.1
+### Agregado
+* ideas.md
+
+
+
+
+
+
+
