@@ -1,3 +1,7 @@
+## 27-10-2022 v0.1.0
+### Agregado
+* Primer despliegue de la app
+
 ## 29-09-2022 
 ### Agregado
 * Aplicación con UI
