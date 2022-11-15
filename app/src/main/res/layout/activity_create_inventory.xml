@@ -1,371 +1,1366 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/empty"
+    android:background="@drawable/emptyscreen"
     tools:context=".CreateInventoryActivity">
 
 
-    <ImageView
-        android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="35dp"
-        android:contentDescription="@string/logo"
-        android:src="@drawable/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="35dp"
+            android:contentDescription="@string/logo"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
-
-        android:id="@+id/text_vasos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/vasos"
-        android:textColor="#ee134d"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo" />
-
-    <TextView
-
-        android:id="@+id/text_stock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/stock"
-        android:textColor="#ee134d"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_vasos"
-        app:layout_constraintEnd_toStartOf="@id/text_entrada"
-        app:layout_constraintStart_toEndOf="@id/text_vasos"
-        app:layout_constraintTop_toTopOf="@id/text_vasos" />
-
-    <TextView
-
-        android:id="@+id/text_entrada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/entrada"
-        android:textColor="#ee134d"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_vasos"
-        app:layout_constraintEnd_toStartOf="@+id/text_invF"
-        app:layout_constraintStart_toEndOf="@id/text_stock"
-        app:layout_constraintTop_toTopOf="@id/text_vasos" />
-
-    <TextView
-
-        android:id="@+id/text_invF"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/total"
-        android:textColor="#ee134d"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_vasos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/text_entrada"
-        app:layout_constraintTop_toTopOf="@id/text_vasos" />
-
-    <TextView
-
-        android:id="@+id/text_cholao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/cholao"
-        android:textColor="#ffff"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_vasos" />
-
-    <TextView
-
-        android:id="@+id/text_maxicholao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/maxicholao"
-        android:textColor="#ffff"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_cholao" />
-
-    <TextView
-
-        android:id="@+id/text_lulada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/lulada"
-        android:textColor="#ffff"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_maxicholao" />
-
-    <TextView
-
-        android:id="@+id/text_guanabada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/guanabanada"
-        android:textColor="#ffff"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_lulada" />
-
-    <TextView
-
-        android:id="@+id/text_raspao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/raspao"
-        android:textColor="#ffff"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_guanabada" />
-
-    <EditText
-        android:id="@+id/editTextStockCholao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_cholao"
-        app:layout_constraintEnd_toStartOf="@id/editTextEntradaCholao"
-        app:layout_constraintStart_toEndOf="@id/text_cholao"
-        app:layout_constraintTop_toTopOf="@id/text_cholao" />
-
-    <EditText
-        android:id="@+id/editTextEntradaCholao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_cholao"
-        app:layout_constraintEnd_toStartOf="@id/editTextInvFCholao"
-        app:layout_constraintStart_toEndOf="@id/editTextStockCholao"
-        app:layout_constraintTop_toTopOf="@id/text_cholao" />
-
-    <EditText
-        android:id="@+id/editTextInvFCholao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_cholao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/editTextEntradaCholao"
-        app:layout_constraintTop_toTopOf="@id/text_cholao" />
-
-    <EditText
-        android:id="@+id/editTextStockMaxiCholao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_maxicholao"
-        app:layout_constraintEnd_toStartOf="@id/editTextEntradaMaxiCholao"
-        app:layout_constraintStart_toEndOf="@id/text_maxicholao"
-        app:layout_constraintTop_toTopOf="@id/text_maxicholao" />
-
-    <EditText
-        android:id="@+id/editTextEntradaMaxiCholao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_maxicholao"
-        app:layout_constraintEnd_toStartOf="@id/editTextInvFMaxiCholao"
-        app:layout_constraintStart_toEndOf="@id/editTextStockMaxiCholao"
-        app:layout_constraintTop_toTopOf="@id/text_maxicholao" />
-
-    <EditText
-        android:id="@+id/editTextInvFMaxiCholao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_maxicholao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/editTextEntradaMaxiCholao"
-        app:layout_constraintTop_toTopOf="@id/text_maxicholao" />
+        <TextView
+            android:id="@+id/text_vasos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/vasos"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+        <TextView
+            android:id="@+id/text_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/stock"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_vasos"
+            app:layout_constraintEnd_toStartOf="@id/text_entrada"
+            app:layout_constraintStart_toEndOf="@id/text_vasos"
+            app:layout_constraintTop_toTopOf="@id/text_vasos" />
+        <TextView
+            android:id="@+id/text_entrada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/entrada"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_vasos"
+            app:layout_constraintEnd_toStartOf="@+id/text_invF"
+            app:layout_constraintStart_toEndOf="@id/text_stock"
+            app:layout_constraintTop_toTopOf="@id/text_vasos" />
+        <TextView
+            android:id="@+id/text_invF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/total"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_vasos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/text_entrada"
+            app:layout_constraintTop_toTopOf="@id/text_vasos" />
 
 
-    <EditText
-        android:id="@+id/editTextStockLulada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_lulada"
-        app:layout_constraintEnd_toStartOf="@id/editTextEntradaLulada"
-        app:layout_constraintStart_toEndOf="@id/text_lulada"
-        app:layout_constraintTop_toTopOf="@id/text_lulada" />
-
-    <EditText
-        android:id="@+id/editTextEntradaLulada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_lulada"
-        app:layout_constraintEnd_toStartOf="@id/editTextInvFLulada"
-        app:layout_constraintStart_toEndOf="@id/editTextStockLulada"
-        app:layout_constraintTop_toTopOf="@id/text_lulada" />
-
-    <EditText
-        android:id="@+id/editTextInvFLulada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_lulada"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/editTextEntradaLulada"
-        app:layout_constraintTop_toTopOf="@id/text_lulada" />
-
-
-    <EditText
-        android:id="@+id/editTextStockGuanabanada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_guanabada"
-        app:layout_constraintEnd_toStartOf="@id/editTextEntradaGuanabanada"
-        app:layout_constraintStart_toEndOf="@id/text_guanabada"
-        app:layout_constraintTop_toTopOf="@id/text_guanabada" />
-
-    <EditText
-        android:id="@+id/editTextEntradaGuanabanada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_guanabada"
-        app:layout_constraintEnd_toStartOf="@id/editTextInvFGuanabanada"
-        app:layout_constraintStart_toEndOf="@id/editTextStockGuanabanada"
-        app:layout_constraintTop_toTopOf="@id/text_guanabada" />
-
-    <EditText
-        android:id="@+id/editTextInvFGuanabanada"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_guanabada"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/editTextEntradaGuanabanada"
-        app:layout_constraintTop_toTopOf="@id/text_guanabada" />
+        <TextView
+            android:id="@+id/text_cholao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/cholao"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_vasos" />
+        <EditText
+            android:id="@+id/editTextStockCholao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:ems="2"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:autofillHints=""
+            android:inputType="number"
+            app:layout_constraintBottom_toBottomOf="@id/text_cholao"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaCholao"
+            app:layout_constraintStart_toEndOf="@id/text_cholao"
+            app:layout_constraintTop_toTopOf="@id/text_cholao"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaCholao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_cholao"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFCholao"
+            app:layout_constraintStart_toEndOf="@id/editTextStockCholao"
+            app:layout_constraintTop_toTopOf="@id/text_cholao"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFCholao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_cholao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaCholao"
+            app:layout_constraintTop_toTopOf="@id/text_cholao"
+            tools:ignore="LabelFor" />
 
 
-    <EditText
-        android:id="@+id/editTextStockRaspao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="45dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_raspao"
-        app:layout_constraintEnd_toStartOf="@id/editTextEntradaRaspao"
-        app:layout_constraintStart_toEndOf="@id/text_raspao"
-        app:layout_constraintTop_toTopOf="@id/text_raspao" />
+        <TextView
 
-    <EditText
-        android:id="@+id/editTextEntradaRaspao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_raspao"
-        app:layout_constraintEnd_toStartOf="@id/editTextInvFRaspao"
-        app:layout_constraintStart_toEndOf="@id/editTextStockRaspao"
-        app:layout_constraintTop_toTopOf="@id/text_raspao" />
+            android:id="@+id/text_maxicholao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/maxicholao"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_cholao" />
+        <EditText
+            android:id="@+id/editTextStockMaxiCholao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_maxicholao"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaMaxiCholao"
+            app:layout_constraintStart_toEndOf="@id/text_maxicholao"
+            app:layout_constraintTop_toTopOf="@id/text_maxicholao"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaMaxiCholao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_maxicholao"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFMaxiCholao"
+            app:layout_constraintStart_toEndOf="@id/editTextStockMaxiCholao"
+            app:layout_constraintTop_toTopOf="@id/text_maxicholao"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFMaxiCholao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_maxicholao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaMaxiCholao"
+            app:layout_constraintTop_toTopOf="@id/text_maxicholao"
+            tools:ignore="LabelFor" />
 
-    <EditText
-        android:id="@+id/editTextInvFRaspao"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:ems="2"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@id/text_raspao"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/editTextEntradaRaspao"
-        app:layout_constraintTop_toTopOf="@id/text_raspao" />
+
+        <TextView
+
+            android:id="@+id/text_lulada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/lulada"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_maxicholao" />
+        <EditText
+            android:id="@+id/editTextStockLulada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_lulada"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaLulada"
+            app:layout_constraintStart_toEndOf="@id/text_lulada"
+            app:layout_constraintTop_toTopOf="@id/text_lulada"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaLulada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_lulada"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFLulada"
+            app:layout_constraintStart_toEndOf="@id/editTextStockLulada"
+            app:layout_constraintTop_toTopOf="@id/text_lulada"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFLulada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_lulada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaLulada"
+            app:layout_constraintTop_toTopOf="@id/text_lulada"
+            tools:ignore="LabelFor" />
 
 
-    <Button
-        android:id="@+id/ButtonSaveInventory"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="200dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="25dp"
-        android:fontFamily="sans-serif-black"
-        android:text="@string/guardar"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="@color/white" />
+        <TextView
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            android:id="@+id/text_guanabada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/guanabana"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_lulada" />
+        <EditText
+            android:id="@+id/editTextStockGuanabanada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_guanabada"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaGuanabanada"
+            app:layout_constraintStart_toEndOf="@id/text_guanabada"
+            app:layout_constraintTop_toTopOf="@id/text_guanabada"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaGuanabanada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_guanabada"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFGuanabanada"
+            app:layout_constraintStart_toEndOf="@id/editTextStockGuanabanada"
+            app:layout_constraintTop_toTopOf="@id/text_guanabada"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFGuanabanada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_guanabada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaGuanabanada"
+            app:layout_constraintTop_toTopOf="@id/text_guanabada"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+
+            android:id="@+id/text_raspao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/raspao"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_guanabada" />
+        <EditText
+            android:id="@+id/editTextStockRaspao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_raspao"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaRaspao"
+            app:layout_constraintStart_toEndOf="@id/text_raspao"
+            app:layout_constraintTop_toTopOf="@id/text_raspao"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaRaspao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_raspao"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFRaspao"
+            app:layout_constraintStart_toEndOf="@id/editTextStockRaspao"
+            app:layout_constraintTop_toTopOf="@id/text_raspao"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFRaspao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_raspao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaRaspao"
+            app:layout_constraintTop_toTopOf="@id/text_raspao"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/text_fruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/fruta"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_raspao" />
+        <TextView
+            android:id="@+id/text_stockFruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/stock"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_fruta"
+            app:layout_constraintEnd_toStartOf="@id/text_entradaFruta"
+            app:layout_constraintStart_toEndOf="@id/text_fruta"
+            app:layout_constraintTop_toTopOf="@id/text_fruta" />
+        <TextView
+            android:id="@+id/text_entradaFruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/entrada"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_fruta"
+            app:layout_constraintEnd_toStartOf="@+id/text_invFFruta"
+            app:layout_constraintStart_toEndOf="@id/text_stockFruta"
+            app:layout_constraintTop_toTopOf="@id/text_fruta" />
+        <TextView
+            android:id="@+id/text_invFFruta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/total"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_fruta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/text_entradaFruta"
+            app:layout_constraintTop_toTopOf="@id/text_fruta" />
+
+
+        <TextView
+
+            android:id="@+id/text_pulpaMaracuya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/maracuya"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_fruta" />
+        <EditText
+            android:id="@+id/editTextStockPulpaMaracuya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_pulpaMaracuya"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaPulpaMaracuya"
+            app:layout_constraintStart_toEndOf="@id/text_pulpaMaracuya"
+            app:layout_constraintTop_toTopOf="@id/text_pulpaMaracuya"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaPulpaMaracuya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_pulpaMaracuya"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFPulpaMaracuya"
+            app:layout_constraintStart_toEndOf="@id/editTextStockPulpaMaracuya"
+            app:layout_constraintTop_toTopOf="@id/text_pulpaMaracuya"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFPulpaMaracuya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_pulpaMaracuya"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaPulpaMaracuya"
+            app:layout_constraintTop_toTopOf="@id/text_pulpaMaracuya"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+
+            android:id="@+id/text_pulpaGuanabana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/Guanabana"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_pulpaMaracuya" />
+        <EditText
+            android:id="@+id/editTextStockPulpaGuanabana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_pulpaGuanabana"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaPulpaGuanabana"
+            app:layout_constraintStart_toEndOf="@id/text_pulpaGuanabana"
+            app:layout_constraintTop_toTopOf="@id/text_pulpaGuanabana"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaPulpaGuanabana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_pulpaGuanabana"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFPulpaGuanabana"
+            app:layout_constraintStart_toEndOf="@id/editTextStockPulpaGuanabana"
+            app:layout_constraintTop_toTopOf="@id/text_pulpaGuanabana"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFPulpaGuanabana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_pulpaGuanabana"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaPulpaGuanabana"
+            app:layout_constraintTop_toTopOf="@id/text_pulpaGuanabana"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/text_PulpaLulada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/lulo"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_pulpaGuanabana" />
+        <EditText
+            android:id="@+id/editTextStockPulpaLulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_PulpaLulada"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaPulpaLulo"
+            app:layout_constraintStart_toEndOf="@id/text_PulpaLulada"
+            app:layout_constraintTop_toTopOf="@id/text_PulpaLulada"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaPulpaLulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_PulpaLulada"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFPulpaLulo"
+            app:layout_constraintStart_toEndOf="@id/editTextStockPulpaLulo"
+            app:layout_constraintTop_toTopOf="@id/text_PulpaLulada"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFPulpaLulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_PulpaLulada"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaPulpaLulo"
+            app:layout_constraintTop_toTopOf="@id/text_PulpaLulada"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/text_banano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/banano"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_PulpaLulada" />
+        <EditText
+            android:id="@+id/editTextStockBanano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_banano"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaBanano"
+            app:layout_constraintStart_toEndOf="@id/text_banano"
+            app:layout_constraintTop_toTopOf="@id/text_banano"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaBanano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_banano"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFBanano"
+            app:layout_constraintStart_toEndOf="@id/editTextStockBanano"
+            app:layout_constraintTop_toTopOf="@id/text_banano"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFBanano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_banano"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaBanano"
+            app:layout_constraintTop_toTopOf="@id/text_banano"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/text_mora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/mora"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_banano" />
+        <EditText
+            android:id="@+id/editTextStockMora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_mora"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaMora"
+            app:layout_constraintStart_toEndOf="@id/text_mora"
+            app:layout_constraintTop_toTopOf="@id/text_mora"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaMora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_mora"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFMora"
+            app:layout_constraintStart_toEndOf="@id/editTextStockMora"
+            app:layout_constraintTop_toTopOf="@id/text_mora"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFMora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_mora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaMora"
+            app:layout_constraintTop_toTopOf="@id/text_mora"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/text_piña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/pi_a"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_mora" />
+        <EditText
+            android:id="@+id/editTextStockPiña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_piña"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaPiña"
+            app:layout_constraintStart_toEndOf="@id/text_piña"
+            app:layout_constraintTop_toTopOf="@id/text_piña"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaPiña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_piña"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFPiña"
+            app:layout_constraintStart_toEndOf="@id/editTextStockPiña"
+            app:layout_constraintTop_toTopOf="@id/text_piña"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFPiña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_piña"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaPiña"
+            app:layout_constraintTop_toTopOf="@id/text_piña"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+            android:id="@+id/text_otros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/otros"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_piña" />
+        <TextView
+            android:id="@+id/text_stockOtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/stock"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_otros"
+            app:layout_constraintEnd_toStartOf="@id/text_entradaOtros"
+            app:layout_constraintStart_toEndOf="@id/text_otros"
+            app:layout_constraintTop_toTopOf="@id/text_otros" />
+        <TextView
+            android:id="@+id/text_entradaOtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/entrada"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_otros"
+            app:layout_constraintEnd_toStartOf="@+id/text_invFOtros"
+            app:layout_constraintStart_toEndOf="@id/text_stockOtros"
+            app:layout_constraintTop_toTopOf="@id/text_otros" />
+        <TextView
+            android:id="@+id/text_invFOtros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/total"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_otros"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/text_entradaOtros"
+            app:layout_constraintTop_toTopOf="@id/text_otros" />
+
+
+        <TextView
+            android:id="@+id/text_leche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/leche"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_otros" />
+        <EditText
+            android:id="@+id/editTextStockLeche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_leche"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaLeche"
+            app:layout_constraintStart_toEndOf="@id/text_leche"
+            app:layout_constraintTop_toTopOf="@id/text_leche"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaLeche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_leche"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFLeche"
+            app:layout_constraintStart_toEndOf="@id/editTextStockLeche"
+            app:layout_constraintTop_toTopOf="@id/text_leche"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFLeche"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_leche"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaLeche"
+            app:layout_constraintTop_toTopOf="@id/text_leche"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+
+            android:id="@+id/text_milo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/milo"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_leche" />
+        <EditText
+            android:id="@+id/editTextStockMilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_milo"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaMilo"
+            app:layout_constraintStart_toEndOf="@id/text_milo"
+            app:layout_constraintTop_toTopOf="@id/text_milo"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaMilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_milo"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFMilo"
+            app:layout_constraintStart_toEndOf="@id/editTextStockMilo"
+            app:layout_constraintTop_toTopOf="@id/text_milo"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFMilo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_milo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaMilo"
+            app:layout_constraintTop_toTopOf="@id/text_milo"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+
+            android:id="@+id/text_pitillo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/pitillos"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_milo" />
+        <EditText
+            android:id="@+id/editTextStockPitillo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_pitillo"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaMilo"
+            app:layout_constraintStart_toEndOf="@id/text_pitillo"
+            app:layout_constraintTop_toTopOf="@id/text_pitillo"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaPitillo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_pitillo"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFMilo"
+            app:layout_constraintStart_toEndOf="@id/editTextStockMilo"
+            app:layout_constraintTop_toTopOf="@id/text_pitillo"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFPitillo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_pitillo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaMilo"
+            app:layout_constraintTop_toTopOf="@id/text_pitillo"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+
+            android:id="@+id/text_servilleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/servilletas"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_pitillo" />
+        <EditText
+            android:id="@+id/editTextStockServilleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_servilleta"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaMilo"
+            app:layout_constraintStart_toEndOf="@id/text_servilleta"
+            app:layout_constraintTop_toTopOf="@id/text_servilleta"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaServilleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_servilleta"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFMilo"
+            app:layout_constraintStart_toEndOf="@id/editTextStockMilo"
+            app:layout_constraintTop_toTopOf="@id/text_servilleta"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFServilleta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_servilleta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaMilo"
+            app:layout_constraintTop_toTopOf="@id/text_servilleta"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+
+            android:id="@+id/text_cucharas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/cucharas"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_servilleta" />
+        <EditText
+            android:id="@+id/editTextStockCuchara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_cucharas"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaCuchara"
+            app:layout_constraintStart_toEndOf="@id/text_cucharas"
+            app:layout_constraintTop_toTopOf="@id/text_cucharas"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaCuchara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_cucharas"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFCuchara"
+            app:layout_constraintStart_toEndOf="@id/editTextStockCuchara"
+            app:layout_constraintTop_toTopOf="@id/text_cucharas"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFCuchara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_cucharas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaCuchara"
+            app:layout_constraintTop_toTopOf="@id/text_cucharas"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+
+            android:id="@+id/text_guantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/guantes"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_cucharas"
+            tools:ignore="TooManyViews" />
+        <EditText
+            android:id="@+id/editTextStockGuantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_guantes"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaGuantes"
+            app:layout_constraintStart_toEndOf="@id/text_guantes"
+            app:layout_constraintTop_toTopOf="@id/text_guantes"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaGuantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_guantes"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFGuantes"
+            app:layout_constraintStart_toEndOf="@id/editTextStockGuantes"
+            app:layout_constraintTop_toTopOf="@id/text_guantes"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFGuantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_guantes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaGuantes"
+            app:layout_constraintTop_toTopOf="@id/text_guantes"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+
+            android:id="@+id/text_tapabocas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/tapabocas"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_guantes" />
+        <EditText
+            android:id="@+id/editTextStockTapabocas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_tapabocas"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaTapabocas"
+            app:layout_constraintStart_toEndOf="@id/text_tapabocas"
+            app:layout_constraintTop_toTopOf="@id/text_tapabocas"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaTapabocas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_tapabocas"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFTapabocas"
+            app:layout_constraintStart_toEndOf="@id/editTextStockTapabocas"
+            app:layout_constraintTop_toTopOf="@id/text_tapabocas"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFTapabocas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_tapabocas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaTapabocas"
+            app:layout_constraintTop_toTopOf="@id/text_tapabocas"
+            tools:ignore="LabelFor" />
+
+
+        <TextView
+
+            android:id="@+id/text_hielo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/hielo"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_tapabocas" />
+        <EditText
+            android:id="@+id/editTextStockHielo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_hielo"
+            app:layout_constraintEnd_toStartOf="@id/editTextEntradaHielo"
+            app:layout_constraintStart_toEndOf="@id/text_hielo"
+            app:layout_constraintTop_toTopOf="@id/text_hielo"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextEntradaHielo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_hielo"
+            app:layout_constraintEnd_toStartOf="@id/editTextInvFHielo"
+            app:layout_constraintStart_toEndOf="@id/editTextStockHielo"
+            app:layout_constraintTop_toTopOf="@id/text_hielo"
+            tools:ignore="LabelFor" />
+        <EditText
+            android:id="@+id/editTextInvFHielo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_hielo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/editTextEntradaHielo"
+            app:layout_constraintTop_toTopOf="@id/text_hielo"
+            tools:ignore="LabelFor"/>
+
+        <TextView
+            android:id="@+id/text_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/total"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_hielo" />
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_total" />
+        <TextView
+            android:id="@+id/text_nota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/nota"
+            android:textColor="#ee134d"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/total" />
+        <EditText
+            android:id="@+id/nota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:autofillHints=""
+            android:ems="2"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_nota"
+            tools:ignore="LabelFor"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/ButtonValidate"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_margin="40dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/calcular"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nota"
+            app:strokeColor="@color/white" />
+        <Button
+            android:id="@+id/ButtonSaveInventory"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/guardar"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:cornerRadius="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ButtonValidate"
+            app:strokeColor="@color/white" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

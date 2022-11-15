@@ -4,9 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.*
-import org.checkerframework.common.subtyping.qual.Bottom
+
 
 class SelectInventoryActivity : AppCompatActivity(), RadioGroup.OnCheckedChangeListener {
 
@@ -23,7 +22,7 @@ class SelectInventoryActivity : AppCompatActivity(), RadioGroup.OnCheckedChangeL
             startActivity(intent)
         }
 
-        var radioGroup: RadioGroup = findViewById(R.id.radio_group)
+        val radioGroup: RadioGroup = findViewById(R.id.radio_group)
 
         radioGroup.setOnCheckedChangeListener(this)
 
@@ -33,15 +32,16 @@ class SelectInventoryActivity : AppCompatActivity(), RadioGroup.OnCheckedChangeL
 
     private fun showDatePickerDialog() {
 
-        val datePicker = DatePickerFragment { day, month, year -> onDateSelected(day, month, year) }
+        val datePicker = DatePickerFragment { day, month, year -> onDateSelected(day, month+1, year) }
         datePicker.show(supportFragmentManager, "datePicker")
     }
 
     @SuppressLint("SetTextI18n")
     fun onDateSelected(day: Int, month: Int, year: Int) {
         val etDate: EditText = findViewById(R.id.edittext_date)
-        val date: String = "$year-$month-$day"
+        val date = "$year-$month-$day"
         SelectInventoryActivity.date = date
+
         etDate.setText("Fecha: $day/$month/$year")
 
     }
